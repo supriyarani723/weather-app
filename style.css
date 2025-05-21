@@ -1,0 +1,34 @@
+.box{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.header div{
+    font-size: 30px;
+}
+.picContainer{
+    display: flex;
+    justify-content:center;
+   
+}
+.picContainer img{
+    height: 120px;
+    width: 100px;
+}
