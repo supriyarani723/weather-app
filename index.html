@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="box">
-            <div class="header">
-                <div>Weather App</div>
-            </div>
+  <div class="mainContainer">
+    <div class="box" id="weatherBox">
+      <div class="header">
+        <div>Weather App</div>
+      </div>
 
-            <div class="searchContainer">
-                <input type="text" class="searchInput" placeholder="Enter city name" />
-                <button class="searchButton">Search</button>
-            </div>
+      <div class="searchContainer">
+        <input type="text" id="cityInput" placeholder="Enter city name" class="searchInput" />
+        <button class="searchButton" onclick="getWeather()">Search</button>
+      </div>
 
-            <div class="picContainer">
-                <img src="/images/cloud.png" alt="Cloud icon" />
-            </div>
+      <div class="picContainer">
+        <img src="/images/cloud.png" alt="Cloud icon" />
+      </div>
 
-            <div class="container">
-                <div class="temperature">25&deg;C</div>
-                <div class="description">Clear Sky</div>
-                <div class="details">
-                    <div>Humidity: 60%</div>
-                    <div>Wind Speed: 10 km/h</div>
-                </div>
-            </div>
-        </div>
+      <div class="container" id="weatherResult">
+        <!-- Weather data will be displayed here -->
+      </div>
     </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
